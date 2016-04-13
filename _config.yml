@@ -16,3 +16,7 @@ github_username:  ciudadanointeligente
 
 # Build settings
 markdown: kramdown
+
+collections:
+  tools:
+    output: true
