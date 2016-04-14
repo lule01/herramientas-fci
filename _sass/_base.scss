@@ -1,5 +1,5 @@
 //palet
-$primary-color: #BBB;
+$primary-color: #16163A;
 
 //mix
 $magenta: #DD4785;
@@ -11,6 +11,13 @@ $celeste: #72C5CE;
 
 body {
   background-color: $gris;
+}
+
+nav.navbar {
+  margin-bottom: 0px;
+  &.navbar-default {
+    background-color: $primary-color;
+  }
 }
 
 header>div {
@@ -75,3 +82,7 @@ header>div {
   }
 }
 
+/* footer */
+footer {
+  background-color: $primary-color;
+}
