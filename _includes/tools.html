@@ -5,7 +5,7 @@
     <div class="col-md-3 {{ t.tool_category }}">
       <h3>{{ t.tool_title }}</h3>
       <p>{{ t.tool_description}}</p>
-      <ul class="list-unstyled">
+      <ul>
         {% for spec in t.tool_specs %}
         <li>{{ spec.key }}</li>
         {% endfor %}

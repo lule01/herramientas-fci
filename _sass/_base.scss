@@ -22,8 +22,10 @@ nav.navbar {
     .navbar-brand, a, a:hover {
       color: #FFF;
     }
+    .navbar-collapse, .navbar-form {
+      border-color: $primary-color;
+    }
   }
-
 }
 
 header>div {
