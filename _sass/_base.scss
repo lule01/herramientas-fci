@@ -27,7 +27,7 @@ nav.navbar {
 }
 
 header>div {
-  background: url('/img/slider_herramientas.png') 50%;
+  background: url('/img/slider_herramientas.png') 50%/auto;
   height: 600px;
   h1, p {
     color: #FFF;
@@ -91,4 +91,13 @@ header>div {
 /* footer */
 footer {
   background-color: $primary-color;
+}
+
+
+/* mobile */
+@media (max-width: 767px) {
+  header>div {
+    background: url('/img/slider_herramientas.png') 25% 40%/auto;
+    height: 350px;
+  }
 }
