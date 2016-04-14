@@ -1,3 +1,7 @@
+body {
+  background-color: $color-celeste-claro;
+}
+
 //palet
 $primary-color: #BBB;
 
@@ -6,6 +10,7 @@ $color-magenta: #DD4785;
 $color-amarillo: #FFBA55;
 $color-naranjo: #F9524E;
 $color-azul: #181C37;
+$color-celeste-claro: ##D6EDEC;
 
 header>div {
   background: url('/img/slider_herramientas.png') 50%;
