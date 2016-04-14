@@ -19,6 +19,11 @@ header>div {
 #three-axis {
   div:nth-child(1) {
     background-color: $color-axis-one;
+    .btn-default:hover {
+      color: #FFF;
+      background-color: #BF3D3D;
+      border-color: #923939;
+    }
   }
   div:nth-child(2) {
     background-color: $color-axis-two;
