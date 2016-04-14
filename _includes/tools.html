@@ -1,7 +1,8 @@
 <div id="tools">
   <div class="row">
     {% assign x = 1 %}
-    {% for t in site.tools %}
+    {% assign tools = site.tools | sort: 'tool_title' %}
+    {% for t in tools %}
     <div class="col-md-3">
       <div class="{{ t.tool_category }}">
         <h3>{{ t.tool_title }}</h3>
