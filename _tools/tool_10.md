@@ -9,4 +9,8 @@ tool_specs:
   - key: 'Fiscalizar el estado de avance'
   - key: 'Dividir una cuenta pública en temas y medidas detalladas'
   - key: 'Graficar con porcentajes el progreso'
+ tool_deploys:
+  - url: '//misitio.com'
+  - url: '//misitio.com'
+tool_category: category_03
 ---

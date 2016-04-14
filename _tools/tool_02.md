@@ -11,5 +11,5 @@ tool_specs:
 tool_deploys:
   - url: '//misitio.com'
   - url: '//misitio.com'
-tool_category: category_03
+tool_category: category_01
 ---

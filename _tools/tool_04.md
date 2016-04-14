@@ -11,4 +11,8 @@ tool_specs:
   - key: 'Visibilizar una problemática'
   - key: 'Perfeccionar las propuestas con cada grupo'
   - key: 'Fomentar la participación ciudadana'
+tool_deploys:
+  - url: '//misitio.com'
+  - url: '//misitio.com'
+tool_category: category_01
 ---
