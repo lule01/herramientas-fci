@@ -8,7 +8,7 @@ tool_specs:
   - key: 'Dar a conocer los puntos principales de una problemática'
   - key: 'Expresar información simple pero detallada'
   - key: 'Recopilar el contacto de simpatizantes'
- tool_deploys:
+tool_deploys:
   - url: '//misitio.com'
   - url: '//misitio.com'
 tool_category: category_02
