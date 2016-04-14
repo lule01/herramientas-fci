@@ -2,35 +2,43 @@
 layout: default
 ---
 
-<div id="three-axis" class="row">
-  <div class="col-md-4">
-    <h2>Participación ciudadana</h2>
-    <p>En Ciudadano Inteligente ponemos herramientas a disposición de la ciudadanía para fomentar y facilitar la participación, ya sea para apoyar la activación colectiva en torno un tema, para sumar el apoyo a iniciativas ciudadanas, para canalizar denuncias, agrupar datos de manera colaborativa o para facilitar el acceso a información.</p>
-    <button class="btn btn-default">Action 01</button>
-  </div>
-  <div class="col-md-4">
-    <h2>Información transparente</h2>
-    <p>Uno de los objetivos principales de la fundación es ayudar a la ciudadanía a estar mejor informada. Es con este fin que se han desarrollado plataformas que buscan transparentar datos, revelar antecedentes, explicar conflictos, abarcar las posturas de distintas partes en torno a un tema y compararlas con las del usuario en un test de afinidad, entre otros.</p>
-    <button class="btn btn-default">Action 01</button>
-  </div>
-  <div class="col-md-4">
-    <h2>Cuenta pública y estado de avance</h2>
-    <p>Nuestro interés también está en fomentar la rendición de cuentas y su contraparte, la fiscalización ciudadana, como otra forma de transparencia. En esta línea hemos desarrollado tecnologías que permiten, por ejemplo, exponer el estado de avance de una serie de medidas, darles seguimiento a las mismas, denunciar el incumplimiento de promesas, hacer públicos los porcentajes de progreso dentro de un proyecto y calificarlos o generar presión ciudadana para (re)impulsar temas de interés.</p>
-    <button class="btn btn-default">Action 01</button>
+<div id="three-axis">
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Participación ciudadana</h2>
+      <p>En Ciudadano Inteligente ponemos herramientas a disposición de la ciudadanía para fomentar y facilitar la participación, ya sea para apoyar la activación colectiva en torno un tema, para sumar el apoyo a iniciativas ciudadanas, para canalizar denuncias, agrupar datos de manera colaborativa o para facilitar el acceso a información.</p>
+      <button class="btn btn-default">Action 01</button>
+    </div>
+    <div class="col-md-4">
+      <h2>Información transparente</h2>
+      <p>Uno de los objetivos principales de la fundación es ayudar a la ciudadanía a estar mejor informada. Es con este fin que se han desarrollado plataformas que buscan transparentar datos, revelar antecedentes, explicar conflictos, abarcar las posturas de distintas partes en torno a un tema y compararlas con las del usuario en un test de afinidad, entre otros.</p>
+      <button class="btn btn-default">Action 01</button>
+    </div>
+    <div class="col-md-4">
+      <h2>Cuenta pública y estado de avance</h2>
+      <p>Nuestro interés también está en fomentar la rendición de cuentas y su contraparte, la fiscalización ciudadana, como otra forma de transparencia. En esta línea hemos desarrollado tecnologías que permiten, por ejemplo, exponer el estado de avance de una serie de medidas, darles seguimiento a las mismas, denunciar el incumplimiento de promesas, hacer públicos los porcentajes de progreso dentro de un proyecto y calificarlos o generar presión ciudadana para (re)impulsar temas de interés.</p>
+      <button class="btn btn-default">Action 01</button>
+    </div>
   </div>
 </div>
 
-<div class="row">
-  {% for t in site.tools %}
-  <div class="col-md-3">
-    <h3>{{ t.tool_title }}</h3>
-    <p>{{ t.tool_description}}</p>
-    <ul class="list-unstyle">
-      {% for spec in t.tool_specs %}
-      <li>{{ spec.key }}</li>
-      {% endfor %}
-    </ul>
-    <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
+<div id="tools">
+  <div class="row">
+    {% assign x = 1 %}
+    {% for t in site.tools %}
+    <div class="col-md-3">
+      <h3>{{ t.tool_title }}</h3>
+      <p>{{ t.tool_description}}</p>
+      <ul class="list-unstyle">
+        {% for spec in t.tool_specs %}
+        <li>{{ spec.key }}</li>
+        {% endfor %}
+      </ul>
+      <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
+    </div>
+      {% assign m = x | modulo:4 %}
+      {% if m == 0 %}</div><div class="row">{% endif %}
+      {% assign x = x | plus:1 %}
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
