@@ -9,4 +9,8 @@ tool_specs:
   - key: 'Transparentar las comunicaciones'
   - key: 'Facilitar un contacto de difícil acceso para los ciudadanos'
   - key: 'Proteger los emails de los involucrados'
+tool_deploys:
+  - url: '//misitio.com'
+  - url: '//misitio.com'
+tool_category: category_01
 ---
