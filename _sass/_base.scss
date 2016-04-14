@@ -35,7 +35,7 @@ header>div {
       background-color: $azul;
       border:none;
     }
-   
+
   }
   div:nth-child(2) {
     background-color: $amarillo;
@@ -65,13 +65,13 @@ header>div {
 
 #tools .col-md-3 {
   &.category_01 {
-    background-color: $color-magenta;
+    background-color: $magenta;
   }
   &.category_02 {
-    background-color: $color-amarillo;
+    background-color: $amarillo;
   }
   &.category_03 {
-    background-color: $color-naranjo;
+    background-color: $naranjo;
   }
 }
 
