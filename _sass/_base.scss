@@ -36,8 +36,7 @@ header>div {
   }
 }
 
-
-
+/* Axis */
 #three-axis .row {
   div:nth-child(1) {
     height: 400px;
@@ -77,20 +76,27 @@ header>div {
 }
 
 /* tools */
+@mixin boxes-style {
+  margin: 10px 3px;
+  padding: 5px 8px;
+  min-height: 450px;
+}
 
 #tools .col-md-3 {
-color: #FFF;
-  &.category_01 {
+  padding-right: 0px;
+  padding-left: 0px;
+  color: #FFF;
+  .category_01 {
     background-color: $magenta;
-    height: 450px;
+    @include boxes-style;
   }
-  &.category_02 {
+  .category_02 {
     background-color: $naranjo;
-    height: 450px;
+    @include boxes-style;
   }
-  &.category_03 {
+  .category_03 {
     background-color: $amarillo;
-    height: 450px;
+    @include boxes-style;
   }
 }
 
