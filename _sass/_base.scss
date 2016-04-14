@@ -14,10 +14,16 @@ body {
 }
 
 nav.navbar {
+  min-height: 80px;
   margin-bottom: 0px;
   &.navbar-default {
     background-color: $primary-color;
+    border-color: $primary-color;
+    .navbar-brand, a, a:hover {
+      color: #FFF;
+    }
   }
+
 }
 
 header>div {
