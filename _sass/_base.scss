@@ -1,7 +1,29 @@
+//palet
+$primary-color: #BBB;
+
+//mix
+$color-axis-one: $primary-color;
+$color-axis-two: #CCC;
+$color-axis-three: #DDD;
+
 header>div {
   background: url('/img/slider_herramientas.png') 50%;
   height: 600px;
   h1, p {
     color: #FFF;
+  }
+}
+
+
+
+#three-axis {
+  div:nth-child(1) {
+    background-color: $color-axis-one;
+  }
+  div:nth-child(2) {
+    background-color: $color-axis-two;
+  }
+  div:nth-child(3) {
+    background-color: $color-axis-three;
   }
 }
