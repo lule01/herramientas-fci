@@ -29,15 +29,13 @@ header>div {
     padding: 20px 25px;
     background-color: $magenta;
     color: #FFF;
-    .btn-default {
-      color: #FFF;
-      background-color: $azul;
-    }
+
     .btn-default:hover {
       color: #FFF;
-      background-color: $celeste;
-      border-color: #;
+      background-color: $azul;
+      border:none;
     }
+   
   }
   div:nth-child(2) {
     background-color: $amarillo;
