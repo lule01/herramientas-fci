@@ -31,8 +31,11 @@ nav.navbar {
 header>div {
   background: url('/img/slider_herramientas.png') 50%/auto;
   height: 600px;
-  h1, p {
-    color: #FFF;
+  & div.container > .row > div {
+    margin-top: 200px;
+    h1, p {
+      color: #FFF;
+    }
   }
 }
 
