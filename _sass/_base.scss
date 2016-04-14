@@ -2,9 +2,9 @@
 $primary-color: #BBB;
 
 //mix
-$color-axis-one: $primary-color;
-$color-axis-two: #CCC;
-$color-axis-three: #DDD;
+$color-magenta: #B71C62;
+$color-amarillo: #FFB31A;
+$color-naranjo: #F94235;
 
 header>div {
   background: url('/img/slider_herramientas.png') 50%;
@@ -18,7 +18,7 @@ header>div {
 
 #three-axis {
   div:nth-child(1) {
-    background-color: $color-axis-one;
+    background-color: $color-magenta;
     .btn-default:hover {
       color: #FFF;
       background-color: #BF3D3D;
@@ -26,9 +26,11 @@ header>div {
     }
   }
   div:nth-child(2) {
-    background-color: $color-axis-two;
+    background-color: $color-amarillo;
+    color: #FFF;
   }
   div:nth-child(3) {
-    background-color: $color-axis-three;
+    background-color: $color-naranjo;
+    color: #FFF;
   }
 }

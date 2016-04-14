@@ -1,5 +1,5 @@
 ---
-tool_id: 2
+tool_id: 5
 tool_title: "Comparador de posturas"
 tool_description: "Comparar las posturas de dos entidades frente a un tema, indicando el nivel de acuerdo entre los dos."
 tool_github: https://github.com/ciudadanointeligente/the_tool
