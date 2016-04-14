@@ -107,9 +107,15 @@ footer {
 
 
 /* mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header>div {
     background: url('/img/slider_herramientas.png') 25% 40%/auto;
     height: 350px;
+  }
+
+  #tools .col-md-3 {
+    .category_01, .category_02, .category_03 {
+      min-height: initial;
+    }
   }
 }
