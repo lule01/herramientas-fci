@@ -1,0 +1,25 @@
+<div id="tools">
+  <div class="row">
+    {% assign x = 1 %}
+    {% for t in site.tools %}
+    <div class="col-md-3 {{ t.tool_category }}">
+      <h3>{{ t.tool_title }}</h3>
+      <p>{{ t.tool_description}}</p>
+      <ul class="list-unstyled">
+        {% for spec in t.tool_specs %}
+        <li>{{ spec.key }}</li>
+        {% endfor %}
+      </ul>
+      <ul class="list-unstyled">
+        {% for spec in t.tool_deploys %}
+        <li><a href="{{ spec.url }}">{{ spec.url | limit: 20 }}</a></li>
+        {% endfor %}
+      </ul>
+      <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
+    </div>
+      {% assign m = x | modulo:4 %}
+      {% if m == 0 %}</div><div class="row">{% endif %}
+      {% assign x = x | plus:1 %}
+    {% endfor %}
+  </div>
+</div>

@@ -10,4 +10,8 @@ tool_specs:
   - key: 'Mostrar el respaldo ciudadano'
   - key: 'Recopilar el contacto de simpatizantes'
   - key: 'Sumar adherentes'
+tool_deploys:
+  - url: '//misitio.com'
+  - url: '//misitio.com'
+tool_category: category_02
 ---

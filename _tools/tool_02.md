@@ -8,4 +8,8 @@ tool_specs:
   - key: 'Sumar los conocimientos individuales en una plataforma'
   - key: 'Facilitar información colaborativa a un organismo'
   - key: 'Mostrar georreferenciadamente denuncias, recomendaciones o datos de usuarios'
+tool_deploys:
+  - url: '//misitio.com'
+  - url: '//misitio.com'
+tool_category: category_03
 ---

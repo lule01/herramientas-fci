@@ -57,3 +57,18 @@ header>div {
     }
   }
 }
+
+/* tools */
+
+#tools .col-md-3 {
+  &.category_01 {
+    background-color: $color-magenta;
+  }
+  &.category_02 {
+    background-color: $color-amarillo;
+  }
+  &.category_03 {
+    background-color: $color-naranjo;
+  }
+}
+
