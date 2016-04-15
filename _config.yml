@@ -14,6 +14,8 @@ url: "http://herramientas.ciudadanointeligente.org" # the base hostname & protoc
 twitter_username: fci
 github_username:  ciudadanointeligente
 analytics: 'UA-76464035-1'
+email: 'redeploys@ciudadanointeligente.org'
+phone: '+56224192770'
 
 # Build settings
 markdown: kramdown
