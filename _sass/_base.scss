@@ -33,8 +33,9 @@ header>div {
   height: 600px;
   & div.container > .row > div {
     margin-top: 200px;
-    h1, p {
+    p {
       color: #FFF;
+      font-size: 24px;
     }
   }
 }
@@ -114,6 +115,12 @@ footer {
   header>div {
     background: url('/img/slider_herramientas.png') 25% 40%/auto;
     height: 350px;
+    & div.container > .row > div {
+      margin-top: 40px;
+      p {
+        font-size: initial;
+      }
+    }
   }
 
   #tools .col-md-3 {
