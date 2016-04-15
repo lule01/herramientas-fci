@@ -8,7 +8,5 @@ tool_specs:
   - key: 'Permitir a usuarios aclarar sus dudas directamente con los personajes'
   - key: 'Transparentar las comunicaciones'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_02
 ---

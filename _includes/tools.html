@@ -12,11 +12,14 @@
           <li>{{ spec.key }}</li>
           {% endfor %}
         </ul>
+        {% if t.tool_deploys %}
+        <p>Funcionando en:</p>
         <ul class="list-unstyled">
           {% for spec in t.tool_deploys %}
-          <li><a href="{{ spec.url }}">{{ spec.url | limit: 20 }}</a></li>
+          <li><a href="{{ spec.url }}">{% if spec.name %}{{ spec.name }}{% else %}{{ site.url | limit: 20 }}{% endif %}</a></li>
           {% endfor %}
         </ul>
+        {% endif %}
         <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
       </div>
     </div>
