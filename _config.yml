@@ -13,6 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://herramientas.ciudadanointeligente.org" # the base hostname & protocol for your site
 twitter_username: fci
 github_username:  ciudadanointeligente
+analytics: 'UA-76464035-1'
 
 # Build settings
 markdown: kramdown
