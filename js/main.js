@@ -6,8 +6,6 @@ $(document).ready( function() {
       $('.category_03').css('display',c);
     }
 
-    console.log( $(this).data('show') )
-
     if( $(this).data('category') === 'category_01' && $(this).data('show') === true ) {
       button_display('','none','none');
       $(this).html('Limpiar filtro');
