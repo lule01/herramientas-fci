@@ -1,7 +1,7 @@
 ---
 tool_id: 6
 tool_title: "Perfiles transparentes"
-tool_description: "Transparentar la información personal y las posturas de personajes aspirantes/nominados a una determinada posición (cargo de trabajo, premio, escaño político, etc)."
+tool_description: "A través de un conjunto de perfiles la herramienta permite transparentar datos personales, posturas u otra información relevante de una serie de personajes y/o entidades pertenecientes a un mismo rubro. *Esta herramienta sirve como base de una plataforma donde se pueden agregar opcionalmente cualquiera de las siguientes secciones: Media Naranja, Pregúntale y Propuestas Ciudadanas."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
   - key: 'Proveer antecedentes sobre personas o entidades'
@@ -9,5 +9,7 @@ tool_specs:
   - key: 'Comparar los antecedentes de dos perfiles'
   - key: 'Hacer ranking de los perfiles'
 tool_deploys:
+  - url: '//municipales2012.votainteligente.cl/arica'
+    name: 'Municipales 2012'
 tool_category: category_02
 ---
