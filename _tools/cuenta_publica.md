@@ -10,7 +10,5 @@ tool_specs:
   - key: 'Dividir una cuenta pública en temas y medidas detalladas'
   - key: 'Graficar con porcentajes el progreso'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_03
 ---

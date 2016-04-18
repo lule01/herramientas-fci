@@ -10,8 +10,6 @@ tool_specs:
   - key: 'Explicar el detalle de cada opinión'
   - key: 'Informar a la ciudadanía'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_02
 ---
 

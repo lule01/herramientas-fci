@@ -12,7 +12,5 @@ tool_specs:
   - key: 'Publicar fechas y noticias atingentes '
   - key: 'Mantener el seguimiento por un período de tiempo'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_03
 ---

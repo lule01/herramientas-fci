@@ -9,7 +9,5 @@ tool_specs:
   - key: 'Comparar los antecedentes de dos perfiles'
   - key: 'Hacer ranking de los perfiles'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_02
 ---

@@ -8,7 +8,5 @@ tool_specs:
   - key: 'Hacer un tests de afinidad entre usuario y personajes'
   - key: 'Facilitar decisiones en base a un mejor conocimiento de los personajes'
 tool_deploys:
-  - url: '//misitio.com'
-  - url: '//misitio.com'
 tool_category: category_02
 ---
