@@ -1,31 +1,25 @@
-<div id="tools">
-  <div class="row">
-    {% assign x = 1 %}
+<ul id="tools" class="list-unstyled grid">
     {% assign tools = site.tools | sort: 'tool_title' %}
     {% for t in tools %}
-    <div class="col-md-3">
-      <div class="{{ t.tool_category }}">
-        <h3>{{ t.tool_title }}</h3>
-        <p>{{ t.tool_description}}</p>
-        <ul>
-          {% for spec in t.tool_specs %}
-          <li>{{ spec.key }}</li>
-          {% endfor %}
-        </ul>
-        {% if t.tool_deploys %}
-        <p>Funcionando en:</p>
-        <ul class="list-unstyled">
-          {% for spec in t.tool_deploys %}
-          <li><a href="{{ spec.url }}">{% if spec.name %}{{ spec.name }}{% else %}{{ site.url | limit: 20 }}{% endif %}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
-      </div>
+  <li class="grid-item col-md-3">
+    <div class="{{ t.tool_category }}">
+      <h3>{{ t.tool_title }}</h3>
+      <p>{{ t.tool_description}}</p>
+      <ul>
+        {% for spec in t.tool_specs %}
+        <li>{{ spec.key }}</li>
+        {% endfor %}
+      </ul>
+      {% if t.tool_deploys %}
+      <p>Funcionando en:</p>
+      <ul class="list-unstyled">
+        {% for spec in t.tool_deploys %}
+        <li><a href="{{ spec.url }}">{% if spec.name %}{{ spec.name }}{% else %}{{ site.url | limit: 20 }}{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a>
     </div>
-      {% assign m = x | modulo:4 %}
-      {% if m == 0 %}</div><div class="row">{% endif %}
-      {% assign x = x | plus:1 %}
+  </li>
     {% endfor %}
-  </div>
 </div>
