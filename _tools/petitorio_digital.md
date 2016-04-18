@@ -1,7 +1,7 @@
 ---
 tool_id: 3
 tool_title: "Petitorio digital"
-tool_description: "Reunir un set de peticiones ciudadanas en torno a un tema específico y juntar adherentes."
+tool_description: "El petitorio digital muestra un set de peticiones ciudadanas en torno a un tema específico, permitiendo posicionar un tema y conseguir adherentes."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
   - key: 'Dar a conocer una causa asociada a peticiones'
@@ -11,5 +11,7 @@ tool_specs:
   - key: 'Recopilar el contacto de simpatizantes'
   - key: 'Sumar adherentes'
 tool_deploys:
+  - url: '//agendatransparencia.cl/'
+    name: 'Agenda transparencia'
 tool_category: category_01
 ---

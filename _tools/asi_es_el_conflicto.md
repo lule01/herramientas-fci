@@ -1,7 +1,7 @@
 ---
 tool_id: 9
 tool_title: "Así es el conflicto"
-tool_description: "Explicar los puntos de un determinado conflicto con el detalle de los argumentos desde una perspectiva ciudadana."
+tool_description: "Mediante una serie de tarjetas se explican los principales puntos de una problemática con el detalle de los argumentos desde una perspectiva ciudadana."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
   - key: 'Visibilizar un conflicto o causa'
@@ -9,5 +9,7 @@ tool_specs:
   - key: 'Expresar información simple pero detallada'
   - key: 'Recopilar el contacto de simpatizantes'
 tool_deploys:
+  - url: '//agendatransparencia.org/'
+    name: 'Agenda transparencia'
 tool_category: category_02
 ---
