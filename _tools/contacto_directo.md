@@ -11,7 +11,7 @@ tool_specs:
   - key: 'Proteger los emails de los involucrados.'
 tool_deploys:
   - url: '//writeit.ciudadanointeligente.org/en/'
-  name: Write it
+    name: 'Write it'
   - url: '//misitio.com'
 tool_category: category_01
 ---
