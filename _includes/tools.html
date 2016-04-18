@@ -7,11 +7,13 @@
       <div class="{{ t.tool_category }}">
         <h3>{{ t.tool_title }}</h3>
         <p>{{ t.tool_description}}</p>
+        <p>Con esta herramienta podrás:</p>
         <ul>
           {% for spec in t.tool_specs %}
           <li>{{ spec.key }}</li>
           {% endfor %}
         </ul>
+        <p>Algunos ejemplos de la herramienta:</p>
         <ul class="list-unstyled">
           {% for spec in t.tool_deploys %}
           <li><a href="{{ spec.url }}">{{ spec.name }}</a></li>
