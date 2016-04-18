@@ -10,7 +10,6 @@ tool_specs:
   - key: 'Facilitar un contacto de difícil acceso para los ciudadanos.'
   - key: 'Proteger los emails de los involucrados.'
 tool_deploys:
-  - <a href="writeit.ciudadanointeligente.org/en/">Write it</a>
   - url: '//writeit.ciudadanointeligente.org/en/'
   - url: '//misitio.com'
 tool_category: category_01
