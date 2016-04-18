@@ -44,15 +44,18 @@ header>div {
 }
 
 /* Axis */
+@mixin base-axis-boxes {
+  height: 450px;
+  padding: 20px 25px;
+  color: #FFF;
+}
+
 #three-axis {
   padding-top: 15px;
   .row {
     div:nth-child(1) {
-      height: 400px;
-      padding: 20px 25px;
+      @include base-axis-boxes;
       background-color: $magenta;
-      color: #FFF;
-
       .btn-default:hover {
         color: #FFF;
         background-color: $azul;
@@ -62,10 +65,8 @@ header>div {
     }
     div:nth-child(2) {
       background-color: $amarillo;
-      color: #FFF;
-      height: 400px;
-      padding: 20px 25px;
-       .btn-default:hover {
+      @include base-axis-boxes;
+      .btn-default:hover {
         color: #FFF;
         background-color: $azul;
         border-color: #923939;
@@ -73,10 +74,8 @@ header>div {
     }
     div:nth-child(3) {
       background-color: $naranjo;
-      color: #FFF;
-      height: 400px;
-      padding: 20px 25px;
-       .btn-default:hover {
+      @include base-axis-boxes;
+      .btn-default:hover {
         color: #FFF;
         background-color: $azul;
         border-color: #923939;
@@ -89,7 +88,7 @@ header>div {
 @mixin boxes-style {
   margin: 10px 3px;
   padding: 5px 8px;
-  min-height: 450px;
+  min-height: 550px;
 }
 
 #tools .col-md-3 {
@@ -130,6 +129,14 @@ footer {
       margin-top: 40px;
       p {
         font-size: initial;
+      }
+    }
+  }
+
+  #three-axis {
+    .row {
+      div:nth-child(1), div:nth-child(2), div:nth-child(3) {
+        height: initial;
       }
     }
   }
