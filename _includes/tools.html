@@ -5,6 +5,7 @@
     <div class="{{ t.tool_category }}">
       <h3>{{ t.tool_title }}</h3>
       <p>{{ t.tool_description}}</p>
+      <p>Con esta herramienta podrás:</p>
       <ul>
         {% for spec in t.tool_specs %}
         <li>{{ spec.key }}</li>
