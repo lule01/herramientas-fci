@@ -27,9 +27,13 @@ nav.navbar {
     }
     .navbar-collapse, .navbar-form {
       border-color: $primary-color;
+      .navbar-nav {
+        padding-top: 15px;
+      }
     }
   }
 }
+
 
 header>div {
   background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
