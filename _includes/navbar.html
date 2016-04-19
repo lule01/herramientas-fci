@@ -2,21 +2,21 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onClick="ga('send', 'event', 'btn-mobile', 'click');">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src="/img/logo-fci-201x61.png" alt="{{ site.title }}"></a>
+      <a class="navbar-brand" href="/" onClick="ga('send', 'event', 'link-logo', 'click');"><img src="/img/logo-fci-201x61.png" alt="{{ site.title }}"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/about.html">La Fundación</a></li>
-        <li><a href="/contact.html">Contacto</a></li>
+        <li><a href="/index.html" onClick="ga('send', 'event', 'link-index', 'click');">Inicio</a></li>
+        <li><a href="/about.html" onClick="ga('send', 'event', 'link-about', 'click');">La Fundación</a></li>
+        <li><a href="/contact.html" onClick="ga('send', 'event', 'link-contact', 'click');">Contacto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
