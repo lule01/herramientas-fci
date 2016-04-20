@@ -92,10 +92,14 @@ header>div {
 @mixin boxes-style {
   margin: 10px 3px;
   padding: 5px 8px;
-  min-height: 600px;
+<<<<<<< HEAD
+  min-height: 660px;
+=======
+  min-height: 500px;
+>>>>>>> origin/gh-pages
 }
 
-#tools .col-md-3 {
+#tools .tools-item {
   padding-right: 0px;
   padding-left: 0px;
   color: #FFF;
@@ -145,7 +149,7 @@ footer {
     }
   }
 
-  #tools .col-md-3 {
+  #tools .tools-item {
     .category_01, .category_02, .category_03 {
       min-height: initial;
     }
