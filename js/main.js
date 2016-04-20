@@ -1,10 +1,10 @@
 $(document).ready( function() {
-  $('#three-axis button').on('click', function() {
-
-  });
-
   $('button').on('click', function() {
     function button_display(a,b,c) {
+      if( !(a === '' && b === '' && c === '') ) {
+        $('body').scrollTo('#tools');
+      }
+
       $('.category_01').parent().css('display',a);
       $('.category_02').parent().css('display',b);
       $('.category_03').parent().css('display',c);
