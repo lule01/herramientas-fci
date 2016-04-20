@@ -1,7 +1,7 @@
 <ul id="tools" class="list-unstyled grid">
     {% assign tools = site.tools | sort: 'tool_title' %}
     {% for t in tools %}
-  <li class="grid-item col-md-3">
+  <li class="tools-item grid-item col-md-4">
     <div class="{{ t.tool_category }}">
       <h3>{{ t.tool_title }}</h3>
       <p>{{ t.tool_description}}</p>
