@@ -14,6 +14,7 @@ tool_specs:
   - key: 'Visibilizar una problemática'
   - key: 'Perfeccionar las propuestas con cada grupo'
   - key: 'Fomentar la participación ciudadana'
+tool_asterisk: "Esta herramienta funciona como un anexo a los Perfiles Transparentes"
 tool_deploys:
 tool_category: category_01
 ---
