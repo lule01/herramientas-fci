@@ -1,6 +1,7 @@
 ---
 tool_id: 4
 tool_title: "Propuestas ciudadanas"
+tool_questions:
   - key: '¿Estás harto de que nadie escuche lo que pide la ciudadanía?'
   - key: '¿Buscas recoger las soluciones ciudadanas a un problema?'
 tool_description: "En este canal se reciben y despliegan propuestas ingresadas por la ciudadanía, permitiendo sumar adherentes, dar a conocer las peticiones y hacerlas llegar a quienes puedan acogerlas. *Esta herramienta funciona como un anexo a los Perfiles Transparentes."
