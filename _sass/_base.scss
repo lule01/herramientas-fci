@@ -39,7 +39,7 @@ header>div {
   background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
   height: 600px;
   & div.container > .row > div {
-    margin-top: 200px;
+    margin-top: 75px;
     p {
       color: #FFF;
       font-size: 24px;
@@ -54,10 +54,18 @@ header>div {
   color: #FFF;
 }
 
+@mixin img-axis {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 #three-axis {
   padding-top: 15px;
   .row {
     div:nth-child(1) {
+      @include img-axis;
       @include base-axis-boxes;
       background-color: $magenta;
       .btn-default:hover {
@@ -68,6 +76,7 @@ header>div {
 
     }
     div:nth-child(2) {
+      @include img-axis;
       background-color: $amarillo;
       @include base-axis-boxes;
       .btn-default:hover {
@@ -77,6 +86,7 @@ header>div {
       }
     }
     div:nth-child(3) {
+      @include img-axis;
       background-color: $naranjo;
       @include base-axis-boxes;
       .btn-default:hover {
@@ -91,14 +101,29 @@ header>div {
 /* tools */
 @mixin boxes-style {
   margin: 10px 3px;
-  padding: 5px 8px;
-  min-height: 600px;
+  padding: 5px 25px;
+  min-height: 650px;
 }
 
 #tools .tools-item {
   padding-right: 0px;
   padding-left: 0px;
   color: #FFF;
+  .working-on {
+    margin: 5px 0px 0px;
+    font-weight: bold;
+  }
+  .tool-asterisk {
+    margin: 10px 0px 0px;
+  }
+  a.btn {
+    margin: {
+      top: 20px;
+    }
+  }
+  a, a:hover {
+    color: #FFF;
+  }
   .category_01 {
     background-color: $magenta;
     @include boxes-style;
