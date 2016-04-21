@@ -3,7 +3,7 @@ tool_id: 8
 tool_title: "Pregúntale"
 tool_questions:
   - key: '¿Quieres que los usuarios interpelen directamente a candidatos, corporaciones, entidades de gobierno?'
-tool_description: "Similar a Contacto Directo, esta sección permite hacer llegar las consultas de los ciudadanos a los personajes de los Perfiles Transparentes. *Esta herramienta funciona como un anexo a los Perfiles Transparentes."
+tool_description: "Similar a Contacto Directo, esta sección permite hacer llegar las consultas de los ciudadanos a los personajes de los Perfiles Transparentes."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
   - key: 'Facilitar el contacto entre ciudadanos y figuras públicas'
