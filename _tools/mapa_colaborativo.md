@@ -1,6 +1,9 @@
 ---
 tool_id: 2
 tool_title: "Mapa colaborativo"
+tool_questions:
+  - key: '¿Buscas facilitar el envío de denuncias de los vecinos en un barrio?'
+  - key: '¿O recopilar las esquinas con más tráfico de un sector de la ciudad? ¿Los mejores restaurantes?'
 tool_description: "Esta plataforma reúne información mediante colaboración ciudadana, donde usuarios pueden entre todos indicar asuntos territoriales en un mapa."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
