@@ -3,7 +3,7 @@
     {% for t in tools %}
   <li class="tools-item grid-item col-sm-6 col-md-4">
     <div class="{{ t.tool_category }}">
-      <h3>{{ t.tool_title }}</h3>
+      <h3 class="text-center">{{ t.tool_title }}</h3>
 
       {% if t.tool_questions.size %}
       <ul>
