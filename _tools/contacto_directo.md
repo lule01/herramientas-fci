@@ -1,6 +1,8 @@
 ---
 tool_id: 1
 tool_title: "Contacto directo"
+tool_questions:
+  - key: '¿Quieres ayudar a la ciudadanía a contactar a políticos u otro grupo de personas?'
 tool_description: "Esta herramienta habilita un sistema abierto de mensajes, lo que permite a los usuarios escribir de forma directa y pública a la persona que se desea contactar."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:

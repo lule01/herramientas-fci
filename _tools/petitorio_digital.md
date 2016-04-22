@@ -1,6 +1,9 @@
 ---
 tool_id: 3
 tool_title: "Petitorio digital"
+tool_questions:
+  - key: '¿Quieres lograr un objetivo y necesitas que se note el apoyo?'
+  - key: '¿Necesitas el compromiso de la gente?'
 tool_description: "El petitorio digital muestra un set de peticiones ciudadanas en torno a un tema específico, permitiendo posicionar un tema y conseguir adherentes."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:

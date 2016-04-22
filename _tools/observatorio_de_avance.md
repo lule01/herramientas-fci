@@ -1,6 +1,8 @@
 ---
 tool_id: 11
 tool_title: "Observatorio de avance"
+tool_questions:
+  - key: '¿Buscas darle seguimiento y calificar un proceso?'
 tool_description: "Este Observatorio busca exponer el estatus de promesas o medidas acordadas, no solo en cuanto al estado de avance, sino también al nivel de satisfacción de este bajo la premisa “no es lo mismo hacer las cosas que hacerlas bien”. Adicionalmente permite hacerle seguimiento posterior al tema."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:

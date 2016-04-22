@@ -1,6 +1,9 @@
 ---
 tool_id: 10
-tool_title: "Cuenta pública"
+tool_title: "Rendición de cuentas"
+tool_questions:
+  - key: '¿Quieres denunciar el incumplimiento de una agenda?'
+  - key: '¿Informar el progreso de un programa?'
 tool_description: "Esta plataforma permite dar a conocer el nivel de avance de un proyecto con porcentajes por categoría, ya sea para rendir cuentas de manera voluntaria o para exponer el progreso de un otro."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
@@ -14,5 +17,7 @@ tool_deploys:
     name: 'Del dicho al hecho - Chile'
   - url: '//gobiernonacional.deldichoalhecho.com.uy/'
     name: 'Del dicho al hecho - Uruguay'
+  - url: '//sabias.cl//'
+    name: 'Promesas de Infancia'
 tool_category: category_03
 ---
