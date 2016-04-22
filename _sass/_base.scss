@@ -47,7 +47,8 @@ h3 {
   background-color: #FFF;
   color: $azul;
   vertical-align: middle;
-  
+  padding-top:10px;
+
 }
 p {
   font-family: Arimo;
@@ -127,6 +128,7 @@ header>div {
   margin: 10px 3px;
   padding: 5px 25px;
   min-height: 650px;
+  box-shadow: 0 0 2px black;
 }
 
 #tools .tools-item {
