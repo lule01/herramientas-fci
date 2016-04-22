@@ -2,16 +2,16 @@
 $primary-color: #16163A;
 
 //mix
-$magenta: #DD4785;
-$amarillo: #FFBA55;
-$naranjo: #F9524E;
+$magenta: #FF6B57;
+$amarillo: #41C3AC;
+$naranjo: #FF884D;
 $azul: #181C37;
 $gris: #F0F0F0;
 $celeste: #72C5CE;
 
 
 body {
-  background-color: $celeste;
+  background-color: #FFF;
   color: #FFF;
   font-family: Open Sans, Arial;
 }
@@ -34,12 +34,18 @@ nav.navbar {
   }
 }
 
+h1{
+  font-family: Arimo;
+  font-size: 24px;
+  line-height: 35px;
+}
+
 h2 {
-  font-family: Oswald;
+  font-family: Roboto;
   margin-bottom:25px;
 }
 h3 {
-  font-family: Oswald;
+  font-family: Roboto;
   margin-top: 20px;
   margin-bottom:20px;
   height: 50px;
@@ -61,7 +67,7 @@ ul {
 
 
 header>div {
-  background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
+  background: url('/img/slider_herramientas_.png') 50%/auto no-repeat;
   height: 600px;
   & div.container > .row > div {
     margin-top: 75px;
