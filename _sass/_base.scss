@@ -36,9 +36,18 @@ nav.navbar {
 
 h2 {
   font-family: Oswald;
+  margin-bottom:25px;
 }
 h3 {
   font-family: Oswald;
+  margin-top: 20px;
+  margin-bottom:20px;
+  height: 50px;
+  weight: 100px;
+  background-color: #FFF;
+  color: $azul;
+  vertical-align: middle;
+  
 }
 p {
   font-family: Arimo;
@@ -64,7 +73,7 @@ header>div {
 
 /* Axis */
 @mixin base-axis-boxes {
-  /*height: 580px;*/
+  /*height: 530px;*/
   padding: 20px 25px;
   color: #FFF;
 }

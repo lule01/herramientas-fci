@@ -12,7 +12,8 @@
         {% endfor %}
       </ul>
       {% endif %}
-
+      <br>
+      <i class="fa fa-bookmark" aria-hidden="true"></i>
       <p>{{ t.tool_description}}</p>
 
       <p>Con esta herramienta podrás:</p>
@@ -22,6 +23,8 @@
         {% endfor %}
       </ul>
       {% if t.tool_deploys %}
+      
+      <i class="fa fa-desktop" aria-hidden="true"></i>
       <p class="working-on">Funcionando en:</p>
       <ul class="list-unstyled">
         {% for spec in t.tool_deploys %}
@@ -30,7 +33,9 @@
       </ul>
       {% endif %}
       {% if t.tool_asterisk %}
-      <p class="tool-asterisk">* {{ t.tool_asterisk }}</p>
+    
+      <i class="fa fa-asterisk" aria-hidden="true"></i>
+      <p class="tool-asterisk"> {{ t.tool_asterisk }}</p>
       {% endif %}
       <!-- <a href="{{ t.tool_github }}" targe="_blank"><i class="fa fa-github"></i></a> -->
       <a href="/contact.html" class="btn btn-primary btn-lg btn-block">Quiero esta herramienta</a>
