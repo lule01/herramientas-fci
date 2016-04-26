@@ -34,6 +34,7 @@ nav.navbar {
   }
 }
 
+/*
 h1{
   font-family: Arimo;
   font-size: 24px;
@@ -64,7 +65,7 @@ ul {
   font-family: Arimo;
   font-size: 13px;
 }
-
+*/
 
 header>div {
   background: url('/img/slider_herramientas_.png') 50%/auto no-repeat;
@@ -130,17 +131,12 @@ header>div {
 }
 
 /* tools */
-@mixin boxes-style {
-  margin: 10px 3px;
-  padding: 5px 25px;
-  min-height: 651px;
-  box-shadow: 0 0 2px black;
-}
-
 #tools .tools-item {
   padding-right: 0px;
   padding-left: 0px;
-  color: #FFF;
+  color: #000;
+  min-height: 795px;
+
   .working-on {
     margin: 5px 0px 0px;
     font-weight: bold;
@@ -154,19 +150,25 @@ header>div {
     }
   }
   a, a:hover {
-    color: #FFF;
+    color: #000;
+    text-decoration: underline;
   }
   .category_01 {
     background-color: $magenta;
-    @include boxes-style;
   }
   .category_02 {
     background-color: $naranjo;
-    @include boxes-style;
   }
   .category_03 {
     background-color: $amarillo;
-    @include boxes-style;
+  }
+
+  .panel-body {
+    color: #000;
+    .panel-footer {
+      background-color: initial;
+      margin-top: 15px;
+    }
   }
 }
 
