@@ -148,12 +148,13 @@ p{ font-size:14px;}
   }
 
   .panel-body {
-    color: $azul;
-    .panel-footer {
+    color: $azul;  
+    min-height: 580px;  
+  }
+  .panel-footer {
       background-color: initial;
-      margin-top: 15px;
-      min-height: 200px;
-    }
+      margin-top: 5px;
+      min-height: 100px;
   }
 
 }
