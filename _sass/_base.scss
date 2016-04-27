@@ -13,7 +13,7 @@ $celeste: #72C5CE;
 body {
   background-color: #FFF;
   color: #FFF;
-  font-family: 'Open Sans', Arial;
+  font-family:'Arimo';
 }
 
 nav.navbar {
@@ -59,6 +59,8 @@ header > div {
 }
 
 #question-header { h2 {color:$azul; margin-top:25px; margin-bottom:25px;}}
+
+p{ font-size:14px;}
 
 /* Axis */
 @mixin base-axis-boxes {
@@ -117,7 +119,7 @@ header > div {
   padding-right: 0px;
   padding-left: 0px;
   color: #000;
-  min-height: 795px;
+  min-height: 820px;
 
   .working-on {
     margin: 5px 0px 0px;
@@ -146,12 +148,14 @@ header > div {
   }
 
   .panel-body {
-    color: #000;
+    color: $azul;
     .panel-footer {
       background-color: initial;
       margin-top: 15px;
+      min-height: 200px;
     }
   }
+
 }
 
 /* footer */
@@ -171,6 +175,13 @@ section#contacto {
 .ss-q-title {
   font-weight: normal;
 }
+/* about */
+.newcolor_row {
+  background-color: $amarillo;
+  padding-top:40px;
+  padding-bottom:60px;
+}
+
 
 /* mobile */
 @media (max-width: 767px) {
@@ -225,3 +236,4 @@ section#contacto {
     }
   }
 }
+
