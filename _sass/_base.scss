@@ -33,62 +33,31 @@ nav.navbar {
     }
   }
 }
-h1{
+h1, p {
   font-family:'Arimo';
 }
-h2{
+h2, h3 {
   font-family:'Roboto';
 }
-h3 {
-  font-family:'Roboto';
-}
-p{
-  font-family:'Arimo';
-}
 
-header { h1 { font-size:24px; line-height: 35px; margin-top:50px;} }
-
-#question-header { h2 {color:$azul; }}
-
-/*
-
-h2 {
-  font-family: Roboto;
-  margin-bottom:25px;
-}
-h3 {
-  font-family: Roboto;
-  margin-top: 20px;
-  margin-bottom:20px;
-  height: 50px;
-  weight: 100px;
-  background-color: #FFF;
-  color: $azul;
-  vertical-align: middle;
-  padding-top:10px;
-
-}
-p {
-  font-family: Arimo;
-  font-size: 13px;
-}
-ul {
-  font-family: Arimo;
-  font-size: 13px;
-}
-*/
-
-header>div {
+header > div {
   background: url('/img/slider_herramientas_.png') 50%/auto no-repeat;
   height: 600px;
-  & div.container > .row > div {
+  div.container > .row > div {
     margin-top: 75px;
+    h1 {
+      font-size:24px;
+      line-height: 35px;
+      margin-top:50px;
+    }
     p {
       color: #FFF;
       font-size: 24px;
     }
   }
 }
+
+#question-header { h2 {color:$azul; }}
 
 /* Axis */
 @mixin base-axis-boxes {
