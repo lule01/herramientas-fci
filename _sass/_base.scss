@@ -42,14 +42,15 @@ h2, h3 {
 }
 
 header > div {
-  background: url('/img/slider_herramientas_.png') 50%/auto no-repeat;
+  background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
   height: 600px;
   div.container > .row > div {
     margin-top: 75px;
     h1 {
-      font-size:24px;
-      line-height: 35px;
-      margin-top:50px;
+      font-size: 22px;
+      line-height: 22px;
+      margin-top: 0px;
+      text-shadow: $primary-color 1px 1px;
     }
     p {
       color: #FFF;
@@ -148,8 +149,8 @@ p{ font-size:14px;}
   }
 
   .panel-body {
-    color: $azul;  
-    min-height: 580px;  
+    color: $azul;
+    min-height: 580px;
   }
   .panel-footer {
       background-color: initial;
@@ -170,8 +171,8 @@ footer {
 }
 
 section#contacto {
-  margin-left:300px;
-  margin-bottom:40px;
+  margin-left: 300px;
+  margin-bottom: 40px;
 }
 .ss-q-title {
   font-weight: normal;
@@ -179,30 +180,16 @@ section#contacto {
 /* about */
 .newcolor_row {
   background-color: $amarillo;
-  padding-top:40px;
-  padding-bottom:60px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 
-/* mobile */
+/* responsive */
 @media (max-width: 767px) {
   header>div {
     background: url('/img/slider_herramientas.png') 25% 40%/auto no-repeat;
     height: 350px;
-    & div.container > .row > div {
-      margin-top: 40px;
-      p {
-        font-size: initial;
-      }
-    }
-  }
-
-  #three-axis {
-    .row {
-      div:nth-child(1), div:nth-child(2), div:nth-child(3) {
-        /*height: initial;*/
-      }
-    }
   }
 
   #tools .tools-item {
@@ -213,11 +200,29 @@ section#contacto {
 }
 
 @media (min-width: 768px) {
+  header > div {
+    div.container > .row > div {
+      h1 {
+        font-size: 24px;
+        line-height: 35px;
+        text-shadow: initial;
+        margin-top: 50px;
+      }
+    }
+  }
+
   #three-axis {
     .row {
       div:nth-child(1), div:nth-child(2), div:nth-child(3) {
         height: 800px;
       }
+    }
+  }
+
+  #tools .tools-item {
+    min-height: 950px;
+    .panel-body {
+      min-height: 680px;
     }
   }
 }

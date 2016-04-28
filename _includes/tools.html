@@ -1,7 +1,7 @@
 <ul id="tools" class="list-unstyled grid">
     {% assign tools = site.tools | sort: 'tool_title' %}
     {% for t in tools %}
-  <li class=" tools-item grid-item col-sm-6 col-md-4">
+  <li class="tools-item grid-item col-sm-6 col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading {{ t.tool_category }}">
         <h3 class="text-center">{{ t.tool_title }}</h3>
@@ -41,7 +41,7 @@
         <p class="tool-asterisk"> {{ t.tool_asterisk }}</p>
         {% endif %}
 
-       
+
       </div>
        <div class="panel-footer">
           <a href="/contact.html" class="btn btn-primary btn-lg btn-block">Quiero esta herramienta</a>
