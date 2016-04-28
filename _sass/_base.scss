@@ -2,18 +2,18 @@
 $primary-color: #16163A;
 
 //mix
-$magenta: #DD4785;
-$amarillo: #FFBA55;
-$naranjo: #F9524E;
+$magenta: #FF6B57;
+$amarillo: #41C3AC;
+$naranjo: #FF884D;
 $azul: #181C37;
 $gris: #F0F0F0;
 $celeste: #72C5CE;
 
 
 body {
-  background-color: $celeste;
+  background-color: #FFF;
   color: #FFF;
-  font-family: Open Sans, Arial;
+  font-family:'Arimo';
 }
 
 nav.navbar {
@@ -33,13 +33,25 @@ nav.navbar {
     }
   }
 }
+h1, p {
+  font-family:'Arimo';
+}
+h2, h3 {
+  font-family:'Roboto';
+  color:#FFF;
+}
 
-
-header>div {
+header > div {
   background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
   height: 600px;
-  & div.container > .row > div {
+  div.container > .row > div {
     margin-top: 75px;
+    h1 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-top: 0px;
+      text-shadow: $primary-color 1px 1px;
+    }
     p {
       color: #FFF;
       font-size: 24px;
@@ -47,11 +59,16 @@ header>div {
   }
 }
 
+#question-header { h2 {color:$azul; margin-top:25px; margin-bottom:25px;}}
+
+p{ font-size:14px;}
+
 /* Axis */
 @mixin base-axis-boxes {
-  /*height: 580px;*/
+  /*height: 530px;*/
   padding: 20px 25px;
   color: #FFF;
+  margin-bottom:25px;
 }
 
 @mixin img-axis {
@@ -99,16 +116,12 @@ header>div {
 }
 
 /* tools */
-@mixin boxes-style {
-  margin: 10px 3px;
-  padding: 5px 25px;
-  min-height: 650px;
-}
-
 #tools .tools-item {
   padding-right: 0px;
   padding-left: 0px;
-  color: #FFF;
+  color: #000;
+  min-height: 820px;
+
   .working-on {
     margin: 5px 0px 0px;
     font-weight: bold;
@@ -122,20 +135,29 @@ header>div {
     }
   }
   a, a:hover {
-    color: #FFF;
+    color: #000;
+    text-decoration: underline;
   }
   .category_01 {
     background-color: $magenta;
-    @include boxes-style;
   }
   .category_02 {
     background-color: $naranjo;
-    @include boxes-style;
   }
   .category_03 {
     background-color: $amarillo;
-    @include boxes-style;
   }
+
+  .panel-body {
+    color: $azul;
+    min-height: 580px;
+  }
+  .panel-footer {
+      background-color: initial;
+      margin-top: 5px;
+      min-height: 100px;
+  }
+
 }
 
 /* footer */
@@ -149,32 +171,25 @@ footer {
 }
 
 section#contacto {
-  margin-left:300px;
-  margin-bottom:40px;
+  margin-left: 300px;
+  margin-bottom: 40px;
 }
 .ss-q-title {
   font-weight: normal;
 }
+/* about */
+.newcolor_row {
+  background-color: $amarillo;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
 
-/* mobile */
+
+/* responsive */
 @media (max-width: 767px) {
   header>div {
     background: url('/img/slider_herramientas.png') 25% 40%/auto no-repeat;
     height: 350px;
-    & div.container > .row > div {
-      margin-top: 40px;
-      p {
-        font-size: initial;
-      }
-    }
-  }
-
-  #three-axis {
-    .row {
-      div:nth-child(1), div:nth-child(2), div:nth-child(3) {
-        /*height: initial;*/
-      }
-    }
   }
 
   #tools .tools-item {
@@ -185,11 +200,29 @@ section#contacto {
 }
 
 @media (min-width: 768px) {
+  header > div {
+    div.container > .row > div {
+      h1 {
+        font-size: 24px;
+        line-height: 35px;
+        text-shadow: initial;
+        margin-top: 50px;
+      }
+    }
+  }
+
   #three-axis {
     .row {
       div:nth-child(1), div:nth-child(2), div:nth-child(3) {
         height: 800px;
       }
+    }
+  }
+
+  #tools .tools-item {
+    min-height: 950px;
+    .panel-body {
+      min-height: 680px;
     }
   }
 }
@@ -209,3 +242,4 @@ section#contacto {
     }
   }
 }
+

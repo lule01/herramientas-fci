@@ -5,9 +5,9 @@ $(document).ready( function() {
         $('body').scrollTo('#tools');
       }
 
-      $('.category_01').parent().css('display',a);
-      $('.category_02').parent().css('display',b);
-      $('.category_03').parent().css('display',c);
+      $('.category_01').parent().parent().css('display',a);
+      $('.category_02').parent().parent().css('display',b);
+      $('.category_03').parent().parent().css('display',c);
     }
 
     if( $(this).data('category') === 'category_01' && $(this).data('show') === true ) {
