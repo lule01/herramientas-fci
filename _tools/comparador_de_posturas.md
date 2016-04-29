@@ -1,7 +1,7 @@
 ---
 tool_id: 5
 tool_title: "Comparador de posturas"
-tool_description: "En esta plataforma se contrastan las posiciones de dos entidades frente a un tema, indicando el nivel de acuerdo entre los dos."
+tool_description: "Plataforma para contrastar posiciones de dos entidades frente a un tema, indicando el nivel de acuerdo entre los dos."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_questions:
   - key: '¿Necesitas explicar tus argumentos dentro de un debate público?'
