@@ -2,7 +2,10 @@ $(document).ready( function() {
   $('button').on('click', function() {
     function button_display(a,b,c) {
       if( !(a === '' && b === '' && c === '') ) {
-        $('body').scrollTo('#tools');
+        // $('body').scrollTo('#tools');
+        $('html, body').animate({
+          scrollTop: $('#tools').offset().top
+        }, 0);
       }
 
       $('.category_01').parent().parent().css('display',a);
