@@ -11,7 +11,7 @@ $celeste: #72C5CE;
 
 
 body {
-  background-color: #FFF;
+  background-color: $primary-color;
   color: #FFF;
   font-family:'Arimo';
 }
@@ -59,7 +59,7 @@ header > div {
   }
 }
 
-#question-header { h2 {color:$azul; margin-top:25px; margin-bottom:25px;}}
+#question-header { h2 {margin-top:25px; margin-bottom:25px;}}
 
 p{ font-size:14px;}
 

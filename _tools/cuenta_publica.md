@@ -4,7 +4,7 @@ tool_title: "Rendición de cuentas"
 tool_questions:
   - key: '¿Quieres denunciar el incumplimiento de una agenda?'
   - key: '¿Informar el progreso de un programa?'
-tool_description: "Esta plataforma permite dar a conocer el nivel de avance de un proyecto con porcentajes por categoría, ya sea para rendir cuentas de manera voluntaria o para exponer el progreso de un otro."
+tool_description: "Plataforma que permite dar a conocer el nivel de avance de un proyecto con porcentajes por categoría, ya sea para rendir cuentas de manera voluntaria o para exponer el proceso de un otro."
 tool_github: https://github.com/ciudadanointeligente/the_tool
 tool_specs:
   - key: 'Medir el avance de propuestas programáticas o promesas (in)cumplidas'
