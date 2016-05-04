@@ -77,38 +77,75 @@ p{ font-size:14px;}
   }
 }
 
+@mixin btn-default {
+  color: #FFF;
+  background-color: $azul;
+  border: 0px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin btn-default-hover {
+  color: $azul;
+  background-color: #8ECFD3;
+  border:none;
+  border-radius: 15px;
+}
+
+/* ejes fundación */
 #three-axis {
   padding-top: 15px;
-  .row {
-    div:nth-child(1) {
-      @include img-axis;
-      @include base-axis-boxes;
+  div.row {
+    div#axis-one {
       background-color: $magenta;
-      .btn-default:hover {
-        color: #FFF;
-        background-color: $azul;
-        border:none;
+      .panel {
+        background-color: initial;
+        border: initial;
+        .panel-body {
+          @include img-axis;
+        }
+        .panel-footer {
+          background-color: initial;
+          border-top: initial;
+          button.btn {
+            @include btn-default;
+          }
+        }
       }
-
     }
-    div:nth-child(2) {
-      @include img-axis;
+    div#axis-two {
       background-color: $amarillo;
-      @include base-axis-boxes;
-      .btn-default:hover {
-        color: #FFF;
-        background-color: $azul;
-        border-color: #923939;
+      .panel {
+        background-color: initial;
+        border: initial;
+        .panel-body {
+          @include img-axis;
+        }
+        .panel-footer {
+          background-color: initial;
+          border-top: initial;
+          button.btn {
+            @include btn-default;
+          }
+        }
       }
     }
-    div:nth-child(3) {
-      @include img-axis;
+    div#axis-three {
       background-color: $naranjo;
-      @include base-axis-boxes;
-      .btn-default:hover {
-        color: #FFF;
-        background-color: $azul;
-        border-color: #923939;
+      .panel {
+        background-color: initial;
+        border: initial;
+        .panel-body {
+          @include img-axis;
+        }
+        .panel-footer {
+          background-color: initial;
+          border-top: initial;
+          button.btn {
+            @include btn-default;
+          }
+        }
       }
     }
   }
@@ -119,7 +156,6 @@ p{ font-size:14px;}
   padding-right: 0px;
   padding-left: 0px;
   color: #000;
-  min-height: 820px;
 
   .working-on {
     margin: 5px 0px 0px;
@@ -155,6 +191,15 @@ p{ font-size:14px;}
       background-color: initial;
       margin-top: 5px;
       min-height: 100px;
+
+      a.btn {
+        @include btn-default;
+        text-decoration:none;
+      }
+      a.btn:hover {
+        @include btn-default-hover;
+        text-decoration:none;
+      }
   }
 
 }
@@ -210,16 +255,8 @@ section#contacto {
     }
   }
 
-  #three-axis {
-    .row {
-      div:nth-child(1), div:nth-child(2), div:nth-child(3) {
-        height: 765px;
-      }
-    }
-  }
 
   #tools .tools-item {
-    min-height: 765px;
     .panel-body {
       min-height: 400px;
     }
@@ -228,20 +265,28 @@ section#contacto {
 
 @media (min-width: 1024px) {
   #three-axis {
-    .row {
-      div:nth-child(1), div:nth-child(2), div:nth-child(3) {
-        height: 595px;
+    margin-bottom: 15px;
+    div.row {
+      div#axis-one, div#axis-two, div#axis-three {
+        .panel {
+          .panel-body {
+            min-height: 580px;
+          }
+        }
       }
     }
   }
 
   #tools .tools-item {
-    min-height: 865px;
-  }
-}
-
-@media (min-width: 1440px) {
-  #tools .tools-item {
-    min-height: 760px;
+    .panel {
+      .panel-heading {
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .panel-body {
+        min-height: 660px;
+      }
+    }
   }
 }
