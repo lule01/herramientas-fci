@@ -9,11 +9,8 @@ $azul: #181C37;
 $gris: #F0F0F0;
 $celeste: #72C5CE;
 
-
 body {
-  background-color: $primary-color;
-  color: #FFF;
-  font-family:'Arimo';
+  background-color: #FFF;
 }
 
 nav.navbar {
@@ -33,260 +30,44 @@ nav.navbar {
     }
   }
 }
-h1, p {
-  font-family:'Arimo';
-}
-h2, h3 {
-  font-family:'Roboto';
-  color:#FFF;
+
+/* Home */
+#section-one {
+  background: url('../img/IMG_0362-22.jpg') 50%/auto no-repeat;
 }
 
-header > div {
-  background: url('/img/slider_herramientas.png') 50%/auto no-repeat;
-  height: 600px;
-  div.container > .row > div {
-    margin-top: 75px;
-    h1 {
-      font-size: 22px;
-      line-height: 22px;
-      margin-top: 0px;
-      text-shadow: $primary-color 1px 1px;
-    }
-    p {
-      color: #FFF;
-      font-size: 24px;
-    }
+#section-three {
+  .row:nth-child(1) > div:nth-child(1) {
+    padding: 0 0;
   }
-}
-
-#question-header { h2 {margin-top:25px; margin-bottom:25px;}}
-
-p{ font-size:14px;}
-
-/* Axis */
-@mixin base-axis-boxes {
-  padding: 20px 25px;
-  color: #FFF;
-  margin-bottom:25px;
-}
-
-@mixin img-axis {
-  img {
-    display: block;
-    margin: 0 auto;
+  .row:nth-child(1) > div:nth-child(2) {
+    background-color: $celeste;
   }
-}
 
-@mixin btn-default {
-  color: #FFF;
-  background-color: $azul;
-  border: 0px;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
-}
-
-@mixin btn-default-hover {
-  color: $azul;
-  background-color: #8ECFD3;
-  border:none;
-  border-radius: 15px;
-}
-
-/* ejes fundación */
-#three-axis {
-  padding-top: 15px;
-  div.row {
-    div#axis-one {
-      background-color: $magenta;
-      .panel {
-        background-color: initial;
-        border: initial;
-        .panel-body {
-          @include img-axis;
-        }
-        .panel-footer {
-          background-color: initial;
-          border-top: initial;
-          button.btn {
-            @include btn-default;
-          }
-        }
-      }
-    }
-    div#axis-two {
-      background-color: $amarillo;
-      .panel {
-        background-color: initial;
-        border: initial;
-        .panel-body {
-          @include img-axis;
-        }
-        .panel-footer {
-          background-color: initial;
-          border-top: initial;
-          button.btn {
-            @include btn-default;
-          }
-        }
-      }
-    }
-    div#axis-three {
-      background-color: $naranjo;
-      .panel {
-        background-color: initial;
-        border: initial;
-        .panel-body {
-          @include img-axis;
-        }
-        .panel-footer {
-          background-color: initial;
-          border-top: initial;
-          button.btn {
-            @include btn-default;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* tools */
-#tools .tools-item {
-  padding-right: 0px;
-  padding-left: 0px;
-  color: #000;
-
-  .working-on {
-    margin: 5px 0px 0px;
-    font-weight: bold;
-  }
-  .tool-asterisk {
-    margin: 10px 0px 0px;
-  }
-  a.btn {
-    margin: {
-      top: 20px;
-    }
-  }
-  a, a:hover {
-    color: #000;
-    text-decoration: underline;
-  }
-  .category_01 {
+  .row:nth-child(2) > div:nth-child(1) {
     background-color: $magenta;
   }
-  .category_02 {
-    background-color: $naranjo;
-  }
-  .category_03 {
-    background-color: $amarillo;
+  .row:nth-child(2) > div:nth-child(2) {
+    padding: 0 0;
   }
 
-  .panel-body {
-    color: $azul;
-    min-height: 580px;
+  .row:nth-child(3) > div:nth-child(1) {
+    padding: 0 0;
   }
-  .panel-footer {
-      background-color: initial;
-      margin-top: 5px;
-      min-height: 100px;
+  .row:nth-child(3) > div:nth-child(2) {
+    background-color: $magenta;
+  }
 
-      a.btn {
-        @include btn-default;
-        text-decoration:none;
-      }
-      a.btn:hover {
-        @include btn-default-hover;
-        text-decoration:none;
-      }
+  .row:nth-child(4) > div:nth-child(1) {
+    background-color: $magenta;
+  }
+  .row:nth-child(4) > div:nth-child(2) {
+    padding: 0 0;
   }
 
 }
+/* EOH */
 
-/* footer */
 footer {
-  padding-top: 20px;
-  color: #FFF;
-  a, a:hover, a:visited {
-    color: #FFF;
-  }
   background-color: $primary-color;
-}
-
-section#contacto {
-  margin-left: 300px;
-  margin-bottom: 40px;
-}
-.ss-q-title {
-  font-weight: normal;
-}
-/* about */
-.newcolor_row {
-  background-color: $amarillo;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-
-
-/* responsive */
-@media (max-width: 767px) {
-  header>div {
-    background: url('/img/slider_herramientas.png') 25% 40%/auto no-repeat;
-    height: 350px;
-  }
-
-  #tools .tools-item {
-    .category_01, .category_02, .category_03 {
-      min-height: initial;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  header > div {
-    div.container > .row > div {
-      h1 {
-        font-size: 24px;
-        line-height: 35px;
-        text-shadow: initial;
-        margin-top: 50px;
-      }
-    }
-  }
-
-
-  #tools .tools-item {
-    .panel-body {
-      min-height: 400px;
-    }
-  }
-}
-
-@media (min-width: 1024px) {
-  #three-axis {
-    margin-bottom: 15px;
-    div.row {
-      div#axis-one, div#axis-two, div#axis-three {
-        .panel {
-          .panel-body {
-            min-height: 580px;
-          }
-        }
-      }
-    }
-  }
-
-  #tools .tools-item {
-    .panel {
-      .panel-heading {
-        h3 {
-          font-size: 20px;
-        }
-      }
-      .panel-body {
-        min-height: 660px;
-      }
-    }
-  }
 }
