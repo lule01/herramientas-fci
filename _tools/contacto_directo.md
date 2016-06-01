@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 1
+permalink: /tools/contacto-directo.html
 tool_title: "Contacto directo"
 tool_questions:
   - key: '¿Quieres ayudar a la ciudadanía a contactar a políticos u otro grupo de personas?'

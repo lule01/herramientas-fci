@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 4
+permalink: /tools/propuestas-ciudadanas.html
 tool_title: "Propuestas ciudadanas"
 tool_questions:
   - key: '¿Estás harto de que nadie escuche lo que pide la ciudadanía?'

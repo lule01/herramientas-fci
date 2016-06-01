@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 8
+permalink: /tools/preguntale.html
 tool_title: "Pregúntale"
 tool_questions:
   - key: '¿Quieres que los usuarios interpelen directamente a candidatos, corporaciones, entidades de gobierno?'

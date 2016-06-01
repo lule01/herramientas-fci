@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 7
+permalink: /tools/media-naranja.html
 tool_title: "Media naranja"
 tool_description: "Contestando un formulario los usuario podrá conocer su nivel de compatibilidad con personajes o entidades de los Perfiles Transparentes."
 tool_asterisk: "La herramienta funciona como anexo a Perfiles Transparentes."

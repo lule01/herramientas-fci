@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 10
+permalink: /tools/rendicion-de-cuentas.html
 tool_title: "Rendición de cuentas"
 tool_questions:
   - key: '¿Quieres denunciar el incumplimiento de una agenda?'

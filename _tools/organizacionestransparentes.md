@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 12
+permalink: /tools/organizaciones-transparentes.html
 tool_title: "Organizaciones transparentes"
 tool_questions:
   - key: '¿Necesitas mostrar o comparar la información de transparencia de múltiples organizaciones de la misma área?'

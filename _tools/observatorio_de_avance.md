@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 11
+permalink: /tools/observatorio-de-avance.html
 tool_title: "Observatorio de avance"
 tool_questions:
   - key: '¿Buscas darle seguimiento y calificar un proceso?'

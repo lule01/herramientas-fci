@@ -1,4 +1,7 @@
 ---
+layout: tool
+permalink: /tools/mapa-colaborativo.html
+tool_category: category_01
 tool_id: 2
 tool_title: "Mapa colaborativo"
 tool_questions:
@@ -14,5 +17,8 @@ tool_specs:
 tool_deploys:
   - url: '//barriosenaccion.cl/'
     name: 'Barrios en acción'
-tool_category: category_01
+tool_screenshots:
+  - url: '//placehold.it/250.png/000/FFF'
+  - url: '//placehold.it/250.png/BBB/000'
+  - url: '//placehold.it/250.png/CCC/000'
 ---

@@ -1,0 +1,90 @@
+---
+layout: default
+---
+<div id="tools">
+  <div class="container-fluid">
+    {% assign categories = site.tools | map : "tool_category" | uniq %}
+    <ul class="list-inline">
+      {% for c in categories %}
+        <li class="{% if c == page.tool_category %}active{% endif %}"><a href="">{{c}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/img/IMG_0362-22.jpg" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <h1>{{page.tool_title}}</h1>
+        <p>{{page.tool_description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <ul class="list-inline">
+      {% for tool in site.tools %}
+        {% if tool.tool_category == page.tool_category %}
+        <li class="{% if tool.tool_title == page.tool_title %}active{% endif %}">
+          <a href="{{tool.url}}">{{tool.tool_title}}</a>
+          <div class="franja"></div>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="spec col-md-6">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Responde a</h4>
+                <p>{{page.tool_respond_to}}</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Con esta herramienta podrás:</h4>
+                <ul class="list-unstyled">
+                  {% for spec in page.tool_specs %}
+                    <li>{{spec.key}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Funcionamiento</h4>
+                <p>{{page.tool_description}}</p>
+              </div>
+              <div class="col-md-6">
+                <h4>Implementado en</h4>
+                <ul class="list-unstyled">
+                  {% for deploy in page.tool_deploys %}
+                    <li><a href="{{deploy.url}}">{{deploy.name}}</a></li>
+                  {% endfor %}
+                </ul>
+
+                <a href="" class="btn">Contáctanos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="screenshots" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-inner" role="listbox">
+              {% for s in page.tool_screenshots %}
+              <li class="item {% if forloop.first == true %}active{% endif %}">
+                <img src="{{s.url}}" alt="" class="img-responsive">
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

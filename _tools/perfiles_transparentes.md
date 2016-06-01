@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 6
+permalink: /tools/perfiles-transparentes.html
 tool_title: "Perfiles transparentes"
 tool_questions:
   - key: '¿Buscas poner información de candidatos a disposición de la ciudadanía?'

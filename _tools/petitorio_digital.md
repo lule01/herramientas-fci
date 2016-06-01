@@ -1,5 +1,7 @@
 ---
+layout: tool
 tool_id: 3
+permalink: /tools/petitorio-digital.html
 tool_title: "Petitorio digital"
 tool_questions:
   - key: '¿Quieres lograr un objetivo y necesitas que se note el apoyo?'
